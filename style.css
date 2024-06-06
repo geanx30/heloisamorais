@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+    background-color:rgba(0, 0, 0, 0.9);
+}
+
+.spotify {
+    margin-bottom: 20px;
+    margin-left: 30%;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.navbar a:hover {
+    color: goldenrod;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+    background: goldenrod;
+    color: rgb(0, 0, 0);
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    margin-left: 42%;
+}
+
+.btn:hover {
+    background: yellow;
+}
+
+.home-container {
+    background: url("./img/helobg.PNG");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-top: -120px;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    max-width: 100rem;
+}
+
+.content h3 {
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.content p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 150;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.title {
+    font-size: 4rem;
+    color: goldenrod;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.title span {
+    color: white;
+    text-align: center;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    gap: 1.5rem;
+}
+
+.about .content {
+    padding: 2rem;
+}
+
+.about .content p {
+    font-size: 1.8rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+    margin-bottom: -50px;
+}
+
+.contato {
+    font-size: 4rem;
+    color: goldenrod;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.texto-contato a {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.texto-contato a:hover {
+    color: rgb(251, 255, 0);
+}
+
+.texto-contato {
+    color: white;
+    font-size: 40px;
+}
+
+.rodape {
+    color: white;
+    text-align: center;
+    background-color: rgb(123, 255, 0, 0.5);
+    padding: 5px;
+    user-select: none;
+    border-top: solid white 0.1rem;
+}
+
+.rodape .a3 {
+    margin-left: 1600px;
+    }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 840px) {
+    .header section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .spotify {
+        margin-top: 200px;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    .navbar a:hover {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        margin-left: 25%;
+    }
+
+    .home-container {
+        height: auto;
+    }
+
+    .content h3 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .about .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about .content p {
+        font-size: 1.2rem;
+    }
+
+    .contato {
+        font-size: 3rem;
+    }
+
+    .texto-contato {
+        font-size: 2rem;
+    }
+    .rodape {
+        color: white;
+        text-align: center;
+        background-color: rgb(123, 255, 0, 0.5);
+        padding: 5px;
+        user-select: none;
+        border-top: solid white 0.1rem;
+    }
+    
+    .rodape .a3 {
+        margin-left: 0px;
+        }
+
+}
